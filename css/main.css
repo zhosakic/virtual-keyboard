@@ -54,7 +54,10 @@ textarea {
   margin-bottom: 12px;
 }
 .line-item1 {
-  width: 830px;
+  /*width: 830px;*/
+}
+.line-item2 {
+  width: 845px;
 }
 .key {
   width: 50px;
@@ -85,4 +88,27 @@ textarea {
 }
 .backspace {
   width: 85px;
+}
+.enter {
+  width: 50px;
+  position: relative;
+}
+.enter:after {
+  content: '';
+  position: absolute;
+  bottom: -63px;
+  right: -1px;
+  display: block;
+  width: 35px;
+  height: 65px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: black;
+  box-shadow: 0 3px 10px rgba(0,0,0,1);
+}
+.enter.active:after {
+  box-shadow: none;
+}
+.caps {
+  width: 100px;
 }

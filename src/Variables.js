@@ -1,5 +1,3 @@
-let currentStateLang = 'ru';
-
-
+let currentStateLang = 'en';
 
 export { currentStateLang };

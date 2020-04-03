@@ -3,7 +3,8 @@ import { eventHanding } from "./EventHandling";
 import { currentStateLang } from "./Variables";
 
 const LINE_1 = 14;
-const LINE_2 = 27;
+const LINE_2 = 28;
+const LINE_3 = 41;
 
 class VirtualKeyboard {
     constructor() {
@@ -47,6 +48,21 @@ class VirtualKeyboard {
         this.keyboardFrame.append(this.keyLine);
 
         for (let i = 14; i < LINE_2; i++) {
+            let keyCode = Object.keys(keyArr)[i];
+            let keyClass = keyArr[keyCode].keyType;
+            let keyAction = keyArr[keyCode].Action;
+            this.keyItem = this.createElement('div', keyClass, keyCode);
+            this.keyName = this.createElement('span',keyAction, keyCode);
+            this.keyName.textContent = keyArr[keyCode][currentStateLang];
+            this.keyItem.append(this.keyName);
+            this.keyLine.append(this.keyItem);
+        }
+
+        //Создаём вторую линию клавиш
+        this.keyLine = this.createElement('div', ['keyboard__line', 'line-item2']);
+        this.keyboardFrame.append(this.keyLine);
+
+        for (let i = 28; i < LINE_3; i++) {
             let keyCode = Object.keys(keyArr)[i];
             let keyClass = keyArr[keyCode].keyType;
             let keyAction = keyArr[keyCode].Action;

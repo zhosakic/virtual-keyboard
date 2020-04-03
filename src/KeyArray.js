@@ -215,6 +215,124 @@ const keyArr = {
         keyType : ['key'],
         Action : ['key-symbol']
     },
+    Enter: {
+        en : 'Ent',
+        ru : 'Ent',
+        shiftEn : 'Ent',
+        shiftRu : 'Ent',
+        keyType : ['key', 'functional', 'enter'],
+        Action : ['functional']
+    },
+    CapsLock: {
+        en : 'Caps',
+        ru : 'Caps',
+        shiftEn : 'Caps',
+        shiftRu : 'Caps',
+        keyType : ['key', 'functional', 'caps'],
+        Action : ['functional']
+    },
+    KeyA: {
+        en : 'a',
+        ru : 'ф',
+        shiftEn : 'A',
+        shiftRu : 'Ф',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyS: {
+        en : 's',
+        ru : 'ы',
+        shiftEn : 'S',
+        shiftRu : 'Ы',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyD: {
+        en : 'd',
+        ru : 'в',
+        shiftEn : 'D',
+        shiftRu : 'В',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyF: {
+        en : 'f',
+        ru : 'а',
+        shiftEn : 'F',
+        shiftRu : 'А',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyG: {
+        en : 'g',
+        ru : 'п',
+        shiftEn : 'G',
+        shiftRu : 'П',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyH: {
+        en : 'h',
+        ru : 'р',
+        shiftEn : 'H',
+        shiftRu : 'Р',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyJ: {
+        en : 'j',
+        ru : 'о',
+        shiftEn : 'J',
+        shiftRu : 'О',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyK: {
+        en : 'k',
+        ru : 'л',
+        shiftEn : 'K',
+        shiftRu : 'Л',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyL: {
+        en : 'l',
+        ru : 'д',
+        shiftEn : 'L',
+        shiftRu : 'Д',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    Semicolon: {
+        en : ';',
+        ru : 'ж',
+        shiftEn : ':',
+        shiftRu : 'Ж',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    Quote: {
+        en : '\'',
+        ru : 'э',
+        shiftEn : '"',
+        shiftRu : 'Э',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    Backslash: {
+        en : '\\',
+        ru : '\\',
+        shiftEn : '|',
+        shiftRu : '/',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+
+
+
+
+
+
 
 };
 
