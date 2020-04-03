@@ -1,0 +1,88 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+textarea {
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.output-key {
+  width: 100%;
+  height: 200px;
+  margin: 30px 0;
+  resize: none;
+  border: 1px solid #eee;
+}
+.test {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+.headline {
+  text-align: center;
+  font-weight: 400;
+}
+.key-value {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border: 1px solid grey;
+  margin: 20px 0;
+}
+.keyboard__frame {
+  width: 930px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+.keyboard__line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.line-item1 {
+  width: 830px;
+}
+.key {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,1);
+  cursor: pointer;
+}
+.key.active,
+.backspace.active{
+  box-shadow: none;
+}
+.key:hover span,
+.backspace:hover span{
+  transition: .2s all;
+  font-size: 26px;
+}
+
+.key span,
+.backspace span {
+  color: white;
+  font-size: 20px;
+}
+.backspace {
+  width: 85px;
+}
