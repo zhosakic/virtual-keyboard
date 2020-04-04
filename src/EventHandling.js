@@ -1,9 +1,8 @@
 import { keyArr } from "./KeyArray";
-import { currentStateLang as currentState} from "./Variables";
+import { currentStateLang as currentState} from "./ChangeLanguage";
+import { changeLanguage } from "./ChangeLanguage";
 
 export function eventHanding() {
-
-
 
     let currentStateLang = currentState;
 
@@ -14,8 +13,9 @@ export function eventHanding() {
     //Нажатие клавиши вниз
     document.addEventListener('keydown', function(event) {
 
+        event.preventDefault();
+
         let pressKeyCode = event.code;
-        console.log(pressKeyCode);
 
         KEY_PRESS.forEach(event => {
             let activeKey = event.getAttribute('data-code');
@@ -33,10 +33,7 @@ export function eventHanding() {
             }
         }
         //Смена клавиш при нажатии на шифт
-        STANDARD_KEYS.forEach(event => {
-            let keyCode = event.getAttribute('data-code');
-            event.innerHTML = keyArr[keyCode][currentStateLang];
-        })
+        updateKeysSymbol();
 
         if (pressKeyCode === 'Backspace') {
             let test = INPUT_TEXT.innerHTML.split('');
@@ -69,10 +66,7 @@ export function eventHanding() {
             }
 
             //Смена клавиш при нажатии на шифт
-            STANDARD_KEYS.forEach(event => {
-                let keyCode = event.getAttribute('data-code');
-                event.innerHTML = keyArr[keyCode][currentStateLang];
-            })
+            updateKeysSymbol();
         }
     });
 
@@ -82,6 +76,19 @@ export function eventHanding() {
             let activeKey = event.getAttribute('data-code');
             if (pressKeyCode === activeKey) {
                 event.classList.add('active');
+                if (activeKey === 'Lang') {
+                    if (currentStateLang === 'en') {
+                        currentStateLang = 'ru';
+                        changeLanguage(currentStateLang);
+                        document.querySelector('.change-lang').innerHTML = 'en';
+                        updateKeysSymbol();
+                    } else {
+                        currentStateLang = 'en';
+                        changeLanguage(currentStateLang);
+                        document.querySelector('.change-lang').innerHTML = 'ru';
+                        updateKeysSymbol();
+                    }
+                }
             }
         });
     });
@@ -96,4 +103,12 @@ export function eventHanding() {
         })
     });
 
+    // Обвновление клавиш на клавиатуре
+    function updateKeysSymbol() {
+        STANDARD_KEYS.forEach(event => {
+            let keyCode = event.getAttribute('data-code');
+            event.innerHTML = keyArr[keyCode][currentStateLang];
+        })
+    }
 }
+

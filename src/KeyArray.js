@@ -104,19 +104,19 @@ const keyArr = {
         Action : ['key-symbol']
     },
     Backspace: {
-        en : '<-',
-        ru : '<-',
-        shiftEn : '<-',
-        shiftRu : '<-',
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
         keyType : ['key', 'functional', 'backspace'],
         Action : ['functional']
     },
     Tab: {
-        en : 'Tab',
-        ru : 'Tab',
-        shiftEn : 'Tab',
-        shiftRu : 'Tab',
-        keyType : ['key', 'functional', 'backspace'],
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'tab'],
         Action : ['functional']
     },
     KeyQ: {
@@ -216,18 +216,18 @@ const keyArr = {
         Action : ['key-symbol']
     },
     Enter: {
-        en : 'Ent',
-        ru : 'Ent',
-        shiftEn : 'Ent',
-        shiftRu : 'Ent',
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
         keyType : ['key', 'functional', 'enter'],
         Action : ['functional']
     },
     CapsLock: {
-        en : 'Caps',
-        ru : 'Caps',
-        shiftEn : 'Caps',
-        shiftRu : 'Caps',
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
         keyType : ['key', 'functional', 'caps'],
         Action : ['functional']
     },
@@ -327,12 +327,199 @@ const keyArr = {
         keyType : ['key'],
         Action : ['key-symbol']
     },
+    ShiftLeft: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'left-shift'],
+        Action : ['functional']
+    },
+    IntlBackslash: {
+        en : '`',
+        ru : ']',
+        shiftEn : '~',
+        shiftRu : '[',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyZ: {
+        en : 'z',
+        ru : 'я',
+        shiftEn : 'Z',
+        shiftRu : 'Я',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyX: {
+        en : 'x',
+        ru : 'ч',
+        shiftEn : 'X',
+        shiftRu : 'Ч',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyC: {
+        en : 'c',
+        ru : 'с',
+        shiftEn : 'C',
+        shiftRu : 'С',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyV: {
+        en : 'v',
+        ru : 'м',
+        shiftEn : 'V',
+        shiftRu : 'М',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyB: {
+        en : 'b',
+        ru : 'и',
+        shiftEn : 'B',
+        shiftRu : 'И',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyN: {
+        en : 'n',
+        ru : 'т',
+        shiftEn : 'N',
+        shiftRu : 'Т',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    KeyM: {
+        en : 'm',
+        ru : 'ь',
+        shiftEn : 'M',
+        shiftRu : 'Ь',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    Comma: {
+        en : ',',
+        ru : 'б',
+        shiftEn : '<',
+        shiftRu : 'Б',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    Period: {
+        en : '.',
+        ru : 'ю',
+        shiftEn : '>',
+        shiftRu : 'Ю',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    Slash: {
+        en : '/',
+        ru : '.',
+        shiftEn : '?',
+        shiftRu : ',',
+        keyType : ['key'],
+        Action : ['key-symbol']
+    },
+    ShiftRight: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'right-shift'],
+        Action : ['functional']
+    },
+    Lang: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'lang'],
+        Action : ['change-lang']
+    },
 
-
-
-
-
-
+    ControlLeft: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'left-control'],
+        Action : ['functional']
+    },
+    AltLeft: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'alt'],
+        Action : ['functional']
+    },
+    MetaLeft: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'cmd'],
+        Action : ['functional']
+    },
+    Space: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'space'],
+        Action : ['functional']
+    },
+    MetaRight: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'cmd'],
+        Action : ['functional']
+    },
+    AltRight: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'alt'],
+        Action : ['functional']
+    },
+    ArrowLeft: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'arrow', 'arrow-left'],
+        Action : ['functional']
+    },
+    ArrowDown: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'arrow', 'arrow-down'],
+        Action : ['functional']
+    },
+    ArrowUp: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'arrow', 'arrow-up'],
+        Action : ['functional']
+    },
+    ArrowRight: {
+        en : '',
+        ru : '',
+        shiftEn : '',
+        shiftRu : '',
+        keyType : ['key', 'functional', 'arrow', 'arrow-right'],
+        Action : ['functional']
+    },
 
 };
 

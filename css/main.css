@@ -52,6 +52,8 @@ textarea {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
+  align-items: flex-end;
+  position: relative;
 }
 .line-item1 {
   /*width: 830px;*/
@@ -70,6 +72,7 @@ textarea {
   align-items: center;
   box-shadow: 0 3px 10px rgba(0,0,0,1);
   cursor: pointer;
+  position: relative;
 }
 .key.active,
 .backspace.active{
@@ -86,14 +89,37 @@ textarea {
   color: white;
   font-size: 20px;
 }
-.backspace {
+.backspace,
+.tab {
   width: 85px;
+}
+.backspace:after {
+  content: '<-';
+  position: absolute;
+  display: block;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.backspace:hover:after {
+  font-size: 26px;
+}
+.tab:after{
+  content: 'Tab';
+  position: absolute;
+  display: block;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.tab:hover:after {
+  font-size: 26px;
 }
 .enter {
   width: 50px;
   position: relative;
 }
-.enter:after {
+.enter:before {
   content: '';
   position: absolute;
   bottom: -63px;
@@ -106,9 +132,117 @@ textarea {
   background-color: black;
   box-shadow: 0 3px 10px rgba(0,0,0,1);
 }
-.enter.active:after {
+.enter.active:before {
   box-shadow: none;
+}
+.enter:after {
+  content: 'ent';
+  position: absolute;
+  display: block;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.enter:hover:after,
+.caps:hover:after{
+  font-size: 26px;
 }
 .caps {
   width: 100px;
+}
+.caps:after {
+  content: 'caps';
+  position: absolute;
+  display: block;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.left-shift:after,
+.right-shift:after{
+  content: 'shift';
+  position: absolute;
+  display: block;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.left-shift:hover:after,
+.right-shift:hover:after{
+  font-size: 26px;
+}
+.left-control:after{
+  content: 'ctrl';
+  position: absolute;
+  display: block;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.left-control:hover:after{
+  font-size: 26px;
+}
+.alt:after{
+  content: 'alt';
+  position: absolute;
+  display: block;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.alt:hover:after{
+  font-size: 26px;
+}
+.cmd:after{
+  content: 'cmd';
+  position: absolute;
+  display: block;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.cmd:hover:after{
+  font-size: 26px;
+}
+.arrow:after {
+  content: '^';
+  position: absolute;
+  display: block;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.arrow:hover:after{
+  font-size: 26px;
+}
+.arrow.arrow-left:after{
+  transform: rotateZ(-90deg);
+}
+
+.arrow.arrow-down:after{
+  transform: rotateZ(-180deg);
+}
+
+.arrow.arrow-right:after{
+  transform: rotateZ(90deg);
+}
+
+.left-shift,
+.cmd{
+  width: 65px;
+}
+.right-shift {
+  width: 120px;
+}
+
+.arrow {
+  height: 25px;
+}
+.arrow-up {
+  position: absolute;
+  right: 62px;
+  bottom: 25px;
+}
+.space {
+  width: 302px;
 }
