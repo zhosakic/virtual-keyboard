@@ -12,7 +12,7 @@ class CreateTitle {
 
         //Создаём описание для клавиатуры
         this.description = this.createElement('p', ['description']);
-        this.description.textContent = `Переключение раскладки комбинация клавиш cmd+space(пробел)`;
+        this.description.textContent = `Переключение раскладки комбинация клавиш ctrl+alt. Дизайн Джони Айв..., ну почти :)`;
 
         //Создаём поле для вывода набранных символов
         this.keyValue = this.createElementInput('textarea', ['key-value'], 'disabled');
@@ -46,7 +46,7 @@ class CreateTitle {
             }
         }
         if (elementAttributes) {
-            element.setAttribute('disabled1', elementAttributes);
+            element.setAttribute('disabled', elementAttributes);
         }
         return element;
     }

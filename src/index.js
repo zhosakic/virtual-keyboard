@@ -1,4 +1,4 @@
-import { setDefaultLanguage, changeLanguage} from "./ChangeLanguage";
+import { setDefaultLanguage } from "./ChangeLanguage";
 import { CreateTitle } from "./CreateTitle";
 import { VirtualKeyboard } from "./CreateKeyboard";
 import { eventHanding } from "./EventHandling";

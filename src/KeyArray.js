@@ -5,7 +5,9 @@ const keyArr = {
         shiftEn : '±',
         shiftRu : 'Ё',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-ru'],
+        CapsEn : '§',
+        CapsRu : 'Ё'
     },
     Digit1 : {
         en : '1',
@@ -13,7 +15,10 @@ const keyArr = {
         shiftEn : '!',
         shiftRu : '!',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '',
+        CapsRu : '1'
+
     },
     Digit2 : {
         en : '2',
@@ -21,7 +26,9 @@ const keyArr = {
         shiftEn : '@',
         shiftRu : '"',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '2',
+        CapsRu : '2'
     },
     Digit3 : {
         en : '3',
@@ -29,7 +36,9 @@ const keyArr = {
         shiftEn : '#',
         shiftRu : '№',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '3',
+        CapsRu : '3'
     },
     Digit4 : {
         en : '4',
@@ -37,7 +46,9 @@ const keyArr = {
         shiftEn : '$',
         shiftRu : ';',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '4',
+        CapsRu : '4'
     },
     Digit5 : {
         en : '5',
@@ -45,7 +56,9 @@ const keyArr = {
         shiftEn : '%',
         shiftRu : '%',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '5',
+        CapsRu : '5'
     },
     Digit6 : {
         en : '6',
@@ -53,7 +66,9 @@ const keyArr = {
         shiftEn : '^',
         shiftRu : ':',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '6',
+        CapsRu : '6'
     },
     Digit7 : {
         en : '7',
@@ -61,7 +76,9 @@ const keyArr = {
         shiftEn : '&',
         shiftRu : '?',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '7',
+        CapsRu : '7'
     },
     Digit8 : {
         en : '8',
@@ -69,7 +86,9 @@ const keyArr = {
         shiftEn : '*',
         shiftRu : '*',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '8',
+        CapsRu : '8'
     },
     Digit9 : {
         en : '9',
@@ -77,7 +96,9 @@ const keyArr = {
         shiftEn : '(',
         shiftRu : '(',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '9',
+        CapsRu : '9'
     },
     Digit0 : {
         en : '0',
@@ -85,7 +106,9 @@ const keyArr = {
         shiftEn : ')',
         shiftRu : ')',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '0',
+        CapsRu : '0'
     },
     Minus: {
         en : '-',
@@ -93,7 +116,9 @@ const keyArr = {
         shiftEn : '_',
         shiftRu : '_',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '-',
+        CapsRu : '-'
     },
     Equal: {
         en : '=',
@@ -101,7 +126,9 @@ const keyArr = {
         shiftEn : '+',
         shiftRu : '+',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '=',
+        CapsRu : '='
     },
     Backspace: {
         en : '',
@@ -109,15 +136,19 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'backspace'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     Tab: {
-        en : '',
-        ru : '',
-        shiftEn : '',
-        shiftRu : '',
+        en : '    ',
+        ru : '    ',
+        shiftEn : '    ',
+        shiftRu : '    ',
         keyType : ['key', 'functional', 'tab'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     KeyQ: {
         en : 'q',
@@ -125,7 +156,9 @@ const keyArr = {
         shiftEn : 'Q',
         shiftRu : 'Й',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'Q',
+        CapsRu : 'Й'
     },
     KeyW: {
         en : 'w',
@@ -133,7 +166,9 @@ const keyArr = {
         shiftEn : 'W',
         shiftRu : 'Ц',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'W',
+        CapsRu : 'Ц'
     },
     KeyE: {
         en : 'e',
@@ -141,7 +176,9 @@ const keyArr = {
         shiftEn : 'E',
         shiftRu : 'У',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'E',
+        CapsRu : 'У'
     },
     KeyR: {
         en : 'r',
@@ -149,7 +186,9 @@ const keyArr = {
         shiftEn : 'R',
         shiftRu : 'К',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'R',
+        CapsRu : 'К'
     },
     KeyT: {
         en : 't',
@@ -157,7 +196,9 @@ const keyArr = {
         shiftEn : 'T',
         shiftRu : 'Е',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'T',
+        CapsRu : 'Е'
     },
     KeyY: {
         en : 'y',
@@ -165,7 +206,9 @@ const keyArr = {
         shiftEn : 'Y',
         shiftRu : 'Н',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'Y',
+        CapsRu : 'Н'
     },
     KeyU: {
         en : 'u',
@@ -173,7 +216,9 @@ const keyArr = {
         shiftEn : 'U',
         shiftRu : 'Г',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'U',
+        CapsRu : 'Г'
     },
     KeyI: {
         en : 'i',
@@ -181,7 +226,9 @@ const keyArr = {
         shiftEn : 'I',
         shiftRu : 'Ш',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'I',
+        CapsRu : 'Ш'
     },
     KeyO: {
         en : 'o',
@@ -189,7 +236,9 @@ const keyArr = {
         shiftEn : 'O',
         shiftRu : 'Щ',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'O',
+        CapsRu : 'Щ'
     },
     KeyP: {
         en : 'p',
@@ -197,7 +246,9 @@ const keyArr = {
         shiftEn : 'P',
         shiftRu : 'З',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'P',
+        CapsRu : 'З'
     },
     BracketLeft: {
         en : '[',
@@ -205,7 +256,9 @@ const keyArr = {
         shiftEn : '{',
         shiftRu : 'Х',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-ru'],
+        CapsEn : '[',
+        CapsRu : 'Х'
     },
     BracketRight: {
         en : ']',
@@ -213,7 +266,9 @@ const keyArr = {
         shiftEn : '}',
         shiftRu : 'Ъ',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-ru'],
+        CapsEn : ']',
+        CapsRu : 'Ъ'
     },
     Enter: {
         en : '',
@@ -221,7 +276,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'enter'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     CapsLock: {
         en : '',
@@ -229,7 +286,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'caps'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     KeyA: {
         en : 'a',
@@ -237,7 +296,9 @@ const keyArr = {
         shiftEn : 'A',
         shiftRu : 'Ф',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'A',
+        CapsRu : 'Ф'
     },
     KeyS: {
         en : 's',
@@ -245,7 +306,9 @@ const keyArr = {
         shiftEn : 'S',
         shiftRu : 'Ы',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'S',
+        CapsRu : 'Ы'
     },
     KeyD: {
         en : 'd',
@@ -253,7 +316,9 @@ const keyArr = {
         shiftEn : 'D',
         shiftRu : 'В',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'D',
+        CapsRu : 'В'
     },
     KeyF: {
         en : 'f',
@@ -261,7 +326,9 @@ const keyArr = {
         shiftEn : 'F',
         shiftRu : 'А',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'F',
+        CapsRu : 'А'
     },
     KeyG: {
         en : 'g',
@@ -269,7 +336,9 @@ const keyArr = {
         shiftEn : 'G',
         shiftRu : 'П',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'G',
+        CapsRu : 'П'
     },
     KeyH: {
         en : 'h',
@@ -277,7 +346,9 @@ const keyArr = {
         shiftEn : 'H',
         shiftRu : 'Р',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'H',
+        CapsRu : 'Р'
     },
     KeyJ: {
         en : 'j',
@@ -285,7 +356,9 @@ const keyArr = {
         shiftEn : 'J',
         shiftRu : 'О',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'J',
+        CapsRu : 'О'
     },
     KeyK: {
         en : 'k',
@@ -293,7 +366,9 @@ const keyArr = {
         shiftEn : 'K',
         shiftRu : 'Л',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'K',
+        CapsRu : 'Л'
     },
     KeyL: {
         en : 'l',
@@ -301,7 +376,9 @@ const keyArr = {
         shiftEn : 'L',
         shiftRu : 'Д',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'L',
+        CapsRu : 'Д'
     },
     Semicolon: {
         en : ';',
@@ -309,7 +386,9 @@ const keyArr = {
         shiftEn : ':',
         shiftRu : 'Ж',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-ru'],
+        CapsEn : ';',
+        CapsRu : 'Ж'
     },
     Quote: {
         en : '\'',
@@ -317,7 +396,9 @@ const keyArr = {
         shiftEn : '"',
         shiftRu : 'Э',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-ru'],
+        CapsEn : '\'',
+        CapsRu : 'Э'
     },
     Backslash: {
         en : '\\',
@@ -325,7 +406,9 @@ const keyArr = {
         shiftEn : '|',
         shiftRu : '/',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '\\',
+        CapsRu : '\\'
     },
     ShiftLeft: {
         en : '',
@@ -333,7 +416,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'left-shift'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     IntlBackslash: {
         en : '`',
@@ -341,7 +426,9 @@ const keyArr = {
         shiftEn : '~',
         shiftRu : '[',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '`',
+        CapsRu : ']'
     },
     KeyZ: {
         en : 'z',
@@ -349,7 +436,9 @@ const keyArr = {
         shiftEn : 'Z',
         shiftRu : 'Я',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'Z',
+        CapsRu : 'Я'
     },
     KeyX: {
         en : 'x',
@@ -357,7 +446,9 @@ const keyArr = {
         shiftEn : 'X',
         shiftRu : 'Ч',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'X',
+        CapsRu : 'Ч'
     },
     KeyC: {
         en : 'c',
@@ -365,7 +456,9 @@ const keyArr = {
         shiftEn : 'C',
         shiftRu : 'С',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'C',
+        CapsRu : 'С'
     },
     KeyV: {
         en : 'v',
@@ -373,7 +466,9 @@ const keyArr = {
         shiftEn : 'V',
         shiftRu : 'М',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'V',
+        CapsRu : 'М'
     },
     KeyB: {
         en : 'b',
@@ -381,7 +476,9 @@ const keyArr = {
         shiftEn : 'B',
         shiftRu : 'И',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'B',
+        CapsRu : 'И'
     },
     KeyN: {
         en : 'n',
@@ -389,7 +486,9 @@ const keyArr = {
         shiftEn : 'N',
         shiftRu : 'Т',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'N',
+        CapsRu : 'Т'
     },
     KeyM: {
         en : 'm',
@@ -397,7 +496,9 @@ const keyArr = {
         shiftEn : 'M',
         shiftRu : 'Ь',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-en', 'caps-ru'],
+        CapsEn : 'M',
+        CapsRu : 'Ь'
     },
     Comma: {
         en : ',',
@@ -405,7 +506,9 @@ const keyArr = {
         shiftEn : '<',
         shiftRu : 'Б',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-ru'],
+        CapsEn : ',',
+        CapsRu : 'Б'
     },
     Period: {
         en : '.',
@@ -413,7 +516,9 @@ const keyArr = {
         shiftEn : '>',
         shiftRu : 'Ю',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol', 'caps-ru'],
+        CapsEn : '.',
+        CapsRu : 'Ю'
     },
     Slash: {
         en : '/',
@@ -421,7 +526,9 @@ const keyArr = {
         shiftEn : '?',
         shiftRu : ',',
         keyType : ['key'],
-        Action : ['key-symbol']
+        Action : ['key-symbol'],
+        CapsEn : '/',
+        CapsRu : '.'
     },
     ShiftRight: {
         en : '',
@@ -429,7 +536,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'right-shift'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     Lang: {
         en : '',
@@ -437,7 +546,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'lang'],
-        Action : ['change-lang']
+        Action : ['change-lang'],
+        CapsEn : '',
+        CapsRu : ''
     },
 
     ControlLeft: {
@@ -446,7 +557,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'left-control'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     AltLeft: {
         en : '',
@@ -454,7 +567,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'alt'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     MetaLeft: {
         en : '',
@@ -462,15 +577,19 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'cmd'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     Space: {
-        en : '',
-        ru : '',
-        shiftEn : '',
-        shiftRu : '',
+        en : ' ',
+        ru : ' ',
+        shiftEn : ' ',
+        shiftRu : ' ',
         keyType : ['key', 'functional', 'space'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     MetaRight: {
         en : '',
@@ -478,7 +597,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'cmd'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     AltRight: {
         en : '',
@@ -486,7 +607,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'alt'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     ArrowLeft: {
         en : '',
@@ -494,7 +617,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'arrow', 'arrow-left'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     ArrowDown: {
         en : '',
@@ -502,7 +627,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'arrow', 'arrow-down'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     ArrowUp: {
         en : '',
@@ -510,7 +637,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'arrow', 'arrow-up'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
     ArrowRight: {
         en : '',
@@ -518,7 +647,9 @@ const keyArr = {
         shiftEn : '',
         shiftRu : '',
         keyType : ['key', 'functional', 'arrow', 'arrow-right'],
-        Action : ['functional']
+        Action : ['functional'],
+        CapsEn : '',
+        CapsRu : ''
     },
 
 };
