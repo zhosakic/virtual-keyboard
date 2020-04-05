@@ -172,9 +172,9 @@ export function eventHanding() {
 
                 pressKeyCode = '';
                 if (currentStateLang === 'ru') {
-                    currentStateLang = 'shiftRu';
+                    currentStateLang = 'CapsRu';
                 } else {
-                    currentStateLang = 'shiftEn';
+                    currentStateLang = 'CapsEn';
                 }
                 updateKeysSymbolCapsLock();
 
@@ -183,7 +183,7 @@ export function eventHanding() {
                 CAPS_LOCK_KEY.classList.remove('active');
 
                 pressKeyCode = '';
-                if (currentStateLang === 'shiftRu') {
+                if (currentStateLang === 'CapsRu') {
                     currentStateLang = 'ru';
                 } else {
                     currentStateLang = 'en';
