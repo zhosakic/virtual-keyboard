@@ -9,7 +9,7 @@ export function eventHanding() {
 
     let currentStateLang = currentState;
     let capsLockActive = false;
-    let arrowType;
+    let functionalType;
 
     const KEY_PRESS = document.querySelectorAll('.key');
     const INPUT_TEXT = document.querySelector('.key-value');
@@ -81,11 +81,12 @@ export function eventHanding() {
         if (pressKeyCode === 'ArrowRight' ||
             pressKeyCode === 'ArrowUp'||
             pressKeyCode === 'ArrowDown' ||
-            pressKeyCode === 'ArrowLeft') {
+            pressKeyCode === 'ArrowLeft' ||
+            pressKeyCode === 'Enter') {
 
-             arrowType = pressKeyCode;
+             functionalType = pressKeyCode;
 
-            arrowKeyPress(arrowType);
+            funtionalKeyPres(functionalType);
         }
 
         //Переключение языка
@@ -197,11 +198,12 @@ export function eventHanding() {
         if (pressKeyCode === 'ArrowRight' ||
             pressKeyCode === 'ArrowUp'||
             pressKeyCode === 'ArrowDown' ||
-            pressKeyCode === 'ArrowLeft') {
+            pressKeyCode === 'ArrowLeft' ||
+            pressKeyCode === 'Enter') {
 
-            arrowType = pressKeyCode;
+            functionalType = pressKeyCode;
 
-            arrowKeyPress(arrowType);
+            funtionalKeyPres(functionalType);
         }
 
     });
@@ -239,8 +241,8 @@ export function eventHanding() {
         }
     }
 
-    function arrowKeyPress() {
-        switch (arrowType) {
+    function funtionalKeyPres() {
+        switch (functionalType) {
             case 'ArrowLeft':
                 INPUT_TEXT.innerHTML = INPUT_TEXT.innerHTML + '&#8592;' ;
                 break;
@@ -255,6 +257,10 @@ export function eventHanding() {
 
             case 'ArrowRight':
                 INPUT_TEXT.innerHTML = INPUT_TEXT.innerHTML + '&#8594;' ;
+                break;
+
+            case 'Enter':
+                INPUT_TEXT.innerHTML = INPUT_TEXT.innerHTML + '\n' ;
                 break;
         }
     }
