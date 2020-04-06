@@ -158,6 +158,17 @@ textarea {
   font-size: 20px;
   transition: 0.3s all;
 }
+.caps.active:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: lawngreen;
+  top: 5px;
+  left: 5px;
+}
 .left-shift:after,
 .right-shift:after{
   content: 'shift';
